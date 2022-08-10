@@ -1,0 +1,34 @@
+{
+  "name": "vinyl-collectors-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajpicc3734/Vinyl-Collectors-MERN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajpicc3734/Vinyl-Collectors-MERN/issues"
+  },
+  "homepage": "http://cbannerman21.github.io/attempting-to-deploy-to-heroku",
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
